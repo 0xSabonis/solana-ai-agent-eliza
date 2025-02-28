@@ -4,7 +4,7 @@ An opinionated, batteries-included, ElizaOS distribution designed for ease of de
 
 ## Overview
 
-PRISM AI Agent provides a stable environment for deploying AI agents at scale, both within Trustless Engineering Co. and for customers' on-premises deployments.
+This AI Agent provides a stable environment for deploying AI agents at scale, both within Trustless Engineering Co. and for customers' on-premises deployments.
 
 
 ## Key Features
