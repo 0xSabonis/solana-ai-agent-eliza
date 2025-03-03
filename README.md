@@ -1,53 +1,46 @@
-# Solana AI Agent Demo based on ElizaOS
-
-An opinionated, batteries-included, ElizaOS distribution designed for ease of development and secure, scalable deployments.
+# Eliza - Solana Liquidity Pool Manager
 
 ## Overview
+![image](https://github.com/user-attachments/assets/d0bd58b3-20f4-43c1-8c3e-bad251903f32)
 
-This AI Agent provides a stable environment for deploying AI agents at scale, both within Trustless Engineering Co. and for customers' on-premises deployments.
+Eliza is an intelligent liquidity pool (LP) management tool designed for Solana DEXs. It enables agents to actively monitor and reposition LPs in response to real-time market conditions. Users can stay informed through the chat terminal by requesting updates and insights on their positions, helping refine strategies for optimal performance.
 
+## Features
+![Uploading image.png…]()
 
-## Key Features
-- Simplified ElizaOS setup
-- Isolated structure to allow custom plugins/agents
-- Helm chart for deployment into any kubernetes environment
-- Dev Container support
+- **Active LP Monitoring**: Real-time tracking of your liquidity pool positions.
+- **Automated Rebalancing**: Dynamic LP repositioning based on market conditions.
+- **Chat Terminal Updates**: Stay informed by requesting insights through the chat terminal.
+- **Strategy Refinement**: Receive data-driven recommendations to adjust your LP strategy.
+- **Instant Restart**: Restart Eliza anytime with a new strategy to maintain a responsive investment approach.
 
-## Prerequisites
+## Installation
+Clone the repository and install dependencies:
 
-> **Note**: The default/recommended setup requires at least 16GB RAM.
-
-### Development Environment Options
-
-## Getting Started
-
-### 1. Initialize Environment
-```bash
-make init
+```sh
+git clone https://github.com/your-repo/eliza-lp-manager.git
+cd eliza-lp-manager
+npm install
 ```
 
-### 2. Configure API Keys
-Required configuration:
-- `OPENAI_API_KEY` - Get yours [here](https://platform.openai.com/docs/overview)
-- `OPENROUTER_API_KEY` (Recommended) - Get yours at [OpenRouter.ai](https://openrouter.ai/)
+## Usage
+Start Eliza with:
 
-Add to your `.env` file:
-```env
-OPENAI_API_KEY=sk-...
-OPENROUTER_API_KEY=sk-or-....
+```sh
+npm start
 ```
 
-### 3. Launch Development Environment
-1. Run `tilt up` in the root directory
-2. Access the environment:
-   - Local: https://localhost:10350/
-   - Codespaces: Use the "Ports" selection
-   ![port selection](./docs/images/codespace-port-selection.png)
+To request LP insights via the chat terminal, use:
 
-> **Known Issue**: On first startup, `@elizaos/adapter-postgres` may attempt to create an existing `vector` plugin. Simply restart the agent resource using the refresh icon.
+```sh
+eliza status
+```
 
-### 4. Access the Agent
-Once all containers show green status, access the Agent UI at http://localhost:3800.
+To restart Eliza with a new strategy:
+
+```sh
+eliza restart --strategy=new-strategy.json
+```
 
 ## Contact
 Telegram | [dogewhiz](https://t.me/dogewhiz)
