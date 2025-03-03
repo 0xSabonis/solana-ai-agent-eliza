@@ -6,7 +6,7 @@
 Eliza is an intelligent liquidity pool (LP) management tool designed for Solana DEXs. It enables agents to actively monitor and reposition LPs in response to real-time market conditions. Users can stay informed through the chat terminal by requesting updates and insights on their positions, helping refine strategies for optimal performance.
 
 ## Features
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/135ae5f7-6432-487b-9a05-7ed93a83615f)
 
 - **Active LP Monitoring**: Real-time tracking of your liquidity pool positions.
 - **Automated Rebalancing**: Dynamic LP repositioning based on market conditions.
